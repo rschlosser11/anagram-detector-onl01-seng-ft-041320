@@ -1,3 +1,5 @@
+require 'pry'
+
 class Anagram
   attr_accessor :word
 
@@ -12,6 +14,7 @@ class Anagram
       sorted_anagram = word.chars.sort.join
       if sorted_anagram == sorted_word
         anagrams << word
+        binding.pry
       end
     end
     anagrams
