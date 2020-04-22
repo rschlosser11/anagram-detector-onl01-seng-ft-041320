@@ -5,8 +5,9 @@ class Anagram
     @word = word
   end
 
-  def match(anagrams)
+  def match(possible_anagrams)
     split_word = @word.split("").sort.join
-    anagrams.map {|word| word.chars.sort.join}
+    possible_anagrams.map {|word| word.chars.sort.join}
+    
   end
 end
