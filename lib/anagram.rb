@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(possible_anagrams)
-    sorted_word = @word.chars.sort
+    sorted_word = @word.chars.sort.join
     anagrams = [];
     possible_anagrams.each do |word|
       sorted_anagram = word.chars.sort.join
