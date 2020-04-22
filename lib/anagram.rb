@@ -7,5 +7,6 @@ class Anagram
 
   def match(array)
     split_word = @word.split("")
+    
   end
 end
